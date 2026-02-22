@@ -49,7 +49,8 @@
 
 <div class="quiz-container">
     <h2>Simple Quiz App</h2>
-    <p id="timer">Time Left: 10</p>
+    <h3>Basic questions in BCA</h3>
+    <p id="timer">Time Left: 20</p>
     <h3 id="question">Question Text</h3>
     <div id="options"></div>
     <button id="nextBtn" onclick="nextQuestion()">Next</button>
@@ -72,16 +73,26 @@
             question: "Which CSS property changes text color?",
             options: ["background-color", "font-style", "color", "text-align"],
             answer: "color"
+        },
+        {
+            question: "How the father of C programming?",
+            options: ["Dennis Richie", "James Gosling", "Rasmus Lerdorf", "None of the above"],
+            answer: "Dennis Richie"
         }
+        {
+            question: ["Can we declare function inside structure of C programming?"],
+            options: ["Yes", "No"],
+            answer: "NO"
+        };
     ];
 
     let currentQuestion = 0;
     let score = 0;
-    let timeLeft = 10;
+    let timeLeft = 20;
     let timer;
 
     function startTimer() {
-        timeLeft = 10;
+        timeLeft = 20;
         document.getElementById("timer").innerText = "Time Left: " + timeLeft;
 
         timer = setInterval(() => {
