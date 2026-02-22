@@ -50,7 +50,7 @@
 <div class="quiz-container">
     <h2>Simple Quiz App</h2>
     <h3>Basic questions in BCA</h3>
-    <p id="timer">Time Left: 20</p>
+    <p id="timer">Time Left: 10</p>
     <h3 id="question">Question Text</h3>
     <div id="options"></div>
     <button id="nextBtn" onclick="nextQuestion()">Next</button>
@@ -83,16 +83,16 @@
             question: "Can we declare function inside structure of C programming?",
             options: ["Yes", "No"],
             answer: "NO"
-        };
+        }
     ];
 
     let currentQuestion = 0;
     let score = 0;
-    let timeLeft = 20;
+    let timeLeft = 10;
     let timer;
 
     function startTimer() {
-        timeLeft = 20;
+        timeLeft = 10;
         document.getElementById("timer").innerText = "Time Left: " + timeLeft;
 
         timer = setInterval(() => {
